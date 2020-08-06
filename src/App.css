@@ -212,7 +212,7 @@ nav {
 /* STEPS SECTION START */ 
 
 .Section__CatList {
-  height: 120vh;
+  height: 130vh;
   display: flex;
   position: relative;
   overflow: hidden;
@@ -225,37 +225,52 @@ nav {
 .Cat__Photo img {
   max-width: 100%;
   max-height: 35vh;
+  display: flex;
+  box-shadow: 10px 10px 5px #ccc;
 }
 
 .Cats {
-  background-color: slateblue;
   display: grid;
   grid-template-columns: repeat(4, 20rem);
+  grid-column-gap: 2rem;
   grid-template-rows: repeat(2, 30rem);
-  margin-top: 5rem;
+  margin-top: 3rem;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
 }
 
-.Cats__PhotoOne {
-  background-color: skyblue;
-  width: 15rem;
-  height: 22rem;
-}
 
 .Cats__Name {
-  background-color: tomato;
-  width: 15rem;
-  height: 2.5rem;
+  font-family: 'Lobster Two', cursive;
+  width: 100%;
+  height: 2rem;
+  text-align: center;
+  font-size: 1.7em;
+  margin-top: 1.5rem;
+  opacity: 0;
+
 }
 
 .CatList__Container h2 {
-  margin-top: 2rem;
+  margin-top: 6rem;
   text-align: center;
+  letter-spacing: 2px;
+}
+
+.CatList__Container p {
+  margin-top: 1rem;
+  margin-right: 1.6rem;
+  text-align: right;
+  letter-spacing: 2px;
 }
 
 .Cats__PhotoOne {
   grid-column: 1/2;
   grid-row: 1/2;
 }
+
+
 
 .Cats__PhotoTwo {
   grid-column: 2/3;
