@@ -210,3 +210,85 @@ nav {
 }
 
 /* STEPS SECTION START */ 
+
+.Section__CatList {
+  height: 120vh;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  z-index: -2;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(245, 247, 243);
+}
+
+.Cat__Photo img {
+  max-width: 100%;
+  max-height: 35vh;
+}
+
+.Cats {
+  background-color: slateblue;
+  display: grid;
+  grid-template-columns: repeat(4, 20rem);
+  grid-template-rows: repeat(2, 30rem);
+  margin-top: 5rem;
+}
+
+.Cats__PhotoOne {
+  background-color: skyblue;
+  width: 15rem;
+  height: 22rem;
+}
+
+.Cats__Name {
+  background-color: tomato;
+  width: 15rem;
+  height: 2.5rem;
+}
+
+.CatList__Container h2 {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.Cats__PhotoOne {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.Cats__PhotoTwo {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.Cats__PhotoThree {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+.Cats__PhotoFour {
+  grid-column: 4/5;
+  grid-row: 1/2;
+}
+
+.Cats__PhotoFive {
+  grid-column: 1/2;
+  grid-row: 2/-1;
+}
+
+.Cats__PhotoSix {
+  grid-column: 2/3;
+  grid-row: 2/-1;
+}
+
+.Cats__PhotoSeven {
+  grid-column: 3/4;
+  grid-row: 2/-1;
+}
+
+.Cats__PhotoEight {
+  grid-column: 4/5;
+  grid-row: 2/-1;
+}
+
