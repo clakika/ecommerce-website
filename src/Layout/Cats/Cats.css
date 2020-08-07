@@ -3,18 +3,16 @@
     display: flex;
     position: relative;
     overflow: hidden;
-    z-index: -2;
     justify-content: center;
     align-items: center;
     background-color: rgb(245, 247, 243);
+    font-family: 'Raleway', sans-serif;
   }
   
-  .Cat__Photo img {
-    max-width: 100%;
-    max-height: 35vh;
+  .CatPhoto {
+    max-width: 240px;
+    height: 320px;
     position: relative;
-    box-shadow: 10px 10px 5px #ccc;
-    z-index: 1;
   }
   
   .Cats {
@@ -25,17 +23,6 @@
     justify-items: center;
     align-items: center;
     text-align: center;
-  }
-  
-  
-  .Cats__Name {
-    font-family: 'Lobster Two', cursive;
-    width: 100%;
-    height: 2rem;
-    text-align: center;
-    font-size: 1.7em;
-    margin-top: 1.5rem;
-    opacity: 1;
   }
   
   .CatList__Container h2 {
@@ -51,7 +38,6 @@
   }
   
   .CatList__Container {
-    background-color: tomato;
     padding: 80px 0px;
   }
   
@@ -59,7 +45,76 @@
     grid-column: 1/2;
     grid-row: 1/2;
   }
-  
+
+  /*EXPERIMENT*/
+  .CatCard__Container {
+    position: relative;
+    width: 240px;
+    height: 320px;
+  }
+
+  .CatCard {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+  }
+
+  .CatCard:hover {
+    transform: rotateY(180deg);
+  }
+
+  .CatCard__Front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    color: black;
+  }
+
+  .CatCard__Back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color: white;
+    color: grey;
+    transform: rotateY(180deg);
+    overflow: hidden;
+  }
+
+  .CatCard__Back h4 {
+    font-family: 'Lobster Two', cursive;
+    text-align: center;
+    transform: translateY(-10rem);
+    font-size: 2.2em;
+    letter-spacing: 4px;
+  }
+
+  .CatCard__Back p {
+    text-align: center;
+    transform: translate(1rem, -10rem);
+    vertical-align: center;
+    font-size: 0.6em;
+    letter-spacing: 1;
+  }
+
+  .PersonalityIcon {
+    margin-top: 5px;
+    margin-right: 5px;
+    font-size: 1.3em;
+    color: rgb(173, 139, 133);
+  }
+
+  .CatCard__BackIcon {
+    font-size: 12em;
+    opacity: 0.5;
+    transform: translate(6.7rem, -3rem);
+    color: rgb(173, 139, 133);
+  }
+
+  /*EXPERIMENT*/
   .Cats__PhotoTwo {
     grid-column: 2/3;
     grid-row: 1/2;
@@ -79,12 +134,12 @@
     grid-column: 1/2;
     grid-row: 2/-1;
   }
-  
+
   .Cats__PhotoSix {
     grid-column: 2/3;
     grid-row: 2/-1;
   }
-  
+
   .Cats__PhotoSeven {
     grid-column: 3/4;
     grid-row: 2/-1;
@@ -98,15 +153,29 @@
   .LikeBtn {
     font-size: 2rem;
     justify-self: center;
-    z-index: 10000000;
-    color: coral;
+    z-index: 2;
     position: absolute;
     transform: translate(-2.3rem, 0.2rem);
-  
+    transition: all 0.4s;
+    color: rgb(222, 231, 231);
   }
   
   .LikeBtn:hover {
-    color: red;
+    color: rgb(141, 63, 75);
+    transform: translate(-3rem, 0.9rem) scale(1.4);
   }
+
+  button {
+    padding: 0.7rem;
+    justify-self: center;
+    font-size: 0.8em;
+    border: 2px solid rgb(224, 226, 223);
+    border-radius: 2%;
+    color: rgb(74, 75, 73);
+    background-color: rgb(224, 226, 223);
+    cursor: pointer;
+    outline: none;
+  }
+
   
   

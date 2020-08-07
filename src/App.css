@@ -3,7 +3,7 @@
   width: 100vw;
   height: 100vh;
   display: block;
-  z-index: -1;
+  z-index: 1;
 }
 
 nav .Navigation__Container {
@@ -18,7 +18,7 @@ nav {
     width: 100vw;
     max-width: 100%;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     /*transform: translateY(-80px);
     transition: background-color 0.3s;
     opacity: 0;
