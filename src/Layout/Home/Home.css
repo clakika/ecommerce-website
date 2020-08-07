@@ -1,0 +1,50 @@
+/* HOME SECTION START */ 
+
+.Section__Home {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    z-index: -2;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .Header__Container {
+    z-index: 10;
+  }
+  
+  .Header {
+    padding: 3rem;
+    text-align: center;
+    margin: 0 auto;
+    background-color: rgba(139, 99, 92, 0.4);
+  }
+  
+  .Header h1 {
+    font-family: 'Raleway'; 
+    font-weight:400;
+    letter-spacing: 2px;
+    font-size: 3em;
+    line-height: 2.1;
+    color: rgb(245, 247, 243);
+  }
+  
+  .Header h4 {
+    font-family: 'Raleway'; 
+    font-weight: 300;
+    font-size: 1em;
+    color: rgb(245, 247, 243);
+  }
+  
+  .Header__Image {
+    width: 100%;
+    max-height: 110vh;
+    background-position: center;
+    top: 0;
+    z-index: -1;
+    position: absolute;
+    background-size: cover;
+    overflow: hidden;
+  }
+  
+  /* HOME SECTION END */ 

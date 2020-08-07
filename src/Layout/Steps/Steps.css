@@ -1,0 +1,57 @@
+/* STEPS SECTION START */ 
+
+.Section__Steps { 
+    max-height: 27rem;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    z-index: -2;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .Steps__Container h2 { 
+    text-align: center;
+    grid-row: 1/2;
+    margin-top: 2rem;
+  }
+  
+  .Steps { 
+    display: grid;
+    grid-template-columns: repeat(4, 15rem);
+    grid-column-gap: 4rem;
+    grid-template-rows: 15rem;
+    margin-top: 3rem;
+    text-align: center;
+    align-items: center;
+    line-height: 2;
+  }
+  
+  
+  .StepOne {
+    grid-column: 1/2;
+    grid-row: 1/-1;
+  }
+  
+  .StepTwo {
+    grid-column: 2/3;
+    grid-row: 1/-1;
+  }
+  
+  .StepThree {
+    grid-column: 3/4;
+    grid-row: 1/-1;
+  }
+  
+  .StepFour {
+    grid-column: 4/5;
+    grid-row: 1/-1;
+  }
+  
+  .Steps__Icon {
+    margin: 14px 3px 0 3px;
+    font-size: 1.6em;
+    color: rgb(173, 139, 133);
+  }
+  
+  /* STEPS SECTION START */ 
