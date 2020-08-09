@@ -15,15 +15,12 @@ nav .Navigation__Container {
 
 nav {
     height: 70px;
-    width: 100vw;
+    width: 100%;
     max-width: 100%;
     position: fixed;
+    align-items: center;
+    justify-content: space-between;
     z-index: 2;
-    /*transform: translateY(-80px);
-    transition: background-color 0.3s;
-    opacity: 0;
-    animation: navAnim 2s ease forwards;
-    animation-delay: 2s;*/
 }
 
 .Navigation__CompanyName {
@@ -36,17 +33,31 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
-  position: relative;
 }
+
+.Navigation__MenuList {
+  text-decoration: none;
+}
+
+.Navigation__Link {
+  text-decoration: none;
+  margin-right: 25px;
+  color: black;
+  font-size: 1.2em;
+}
+
 
 .Navigation__Container ul {
   list-style-type: none;
-  justify-content: flex-end;
   display: flex;
 }
 
 .Navigation__MenuItem {
   margin-right: 10px;
   font-size: 1.3rem;
+  color: black;
+}
+
+.Navigation__Logo {
+  width: 36%;
 }

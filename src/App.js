@@ -19,11 +19,33 @@ class App extends Component {
           <div className="Navigation__Container">
             <img className="Navigation__Logo"></img>
             <h3 className="Navigation__CompanyName">Catlingly</h3>
-            <ul className="Navigation__Menu">
-              <FontAwesomeIcon className="Navigation__MenuItem" icon={faSearch} /> {/* search icon */}
-              <FontAwesomeIcon className="Navigation__MenuItem" icon={faPaw} /> {/* cat icon */}
-              <FontAwesomeIcon className="Navigation__MenuItem" icon={faHeart} /> {/* cart icon */}
-              <FontAwesomeIcon className="Navigation__MenuItem" icon={faMapMarkerAlt} /> {/* location icon */}
+            <ul className="Navigation__MenuList">
+              <li>
+                <a href="#" className="Navigation__Link">home</a>
+              </li>
+              <li>
+                <a href="#" className="Navigation__Link">about</a>
+              </li>
+              <li>
+                <a href="#" className="Navigation__Link">cats</a>
+              </li>
+              <li>
+                <a href="#" className="Navigation__Link">contacts</a>
+              </li>
+            </ul>
+            <ul className="Navigation__MenuIcons">
+              <li>
+                <a href="#"><FontAwesomeIcon className="Navigation__MenuItem" icon={faSearch} /></a>
+              </li>
+              <li>
+                <a href="#"><FontAwesomeIcon className="Navigation__MenuItem" icon={faPaw} /></a>
+              </li>
+              <li>
+                <a href="#"><FontAwesomeIcon className="Navigation__MenuItem" icon={faHeart} /></a>
+              </li>
+              <li>
+                <a href="#"><FontAwesomeIcon className="Navigation__MenuItem" icon={faMapMarkerAlt} /></a>
+              </li>
             </ul>
           </div>
         </nav>
