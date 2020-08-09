@@ -26,6 +26,9 @@
     width: 20rem;
     height: 20rem;
     background-color: coral;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
   }
 
   .Testimonial q {
@@ -34,4 +37,21 @@
     font-weight: 600;
     line-height: 2;
     text-align: left;
+  }
+
+  .UserReview {
+    display: flex;
+    background-color: gold;
+    height: auto;
+    margin-top: 2rem;
+  }
+
+  .UserReview p {
+
+  }
+
+  .UserReview img {
+      border-radius: 50%;
+      width: 10rem;
+      height: 10rem;
   }
