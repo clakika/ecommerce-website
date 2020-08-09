@@ -52,12 +52,6 @@ export class Cats extends Component {
                             </div>
                         </div>
 
-
-                       {/* <div className="Cats__PhotoOne Cat__Photo">
-                            <img src={catOne} />
-                            <a href="#"><FontAwesomeIcon className="LikeBtn" icon={faHeart} /></a>
-                            <div className="Cats__Name"><h4>Sam</h4></div>
-                        </div> */}
                         <div className="CatCard__Container">
                             <div className="CatCard">
                                 <div className="CatCard__Front">
@@ -283,8 +277,9 @@ export class Cats extends Component {
                                 </div>
                             </div>
                         </div>
+                        <button>Learn more!</button>
                     </div>
-                    <button>Learn more!</button>
+                    
                 </div>
             </section>
         )
