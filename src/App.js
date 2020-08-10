@@ -6,6 +6,7 @@ import About from '../src/Layout/About/About';
 import Steps from '../src/Layout/Steps/Steps';
 import Cats from '../src/Layout/Cats/Cats';
 import Reviews from '../src/Layout/Reviews/Reviews';
+import Footer from '../src/Layout/Footer/Footer';
 
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -50,12 +51,12 @@ class App extends Component {
             </ul>
           </div>
         </nav>
-    
         <Home className="Section"/>
         <About className="Section"/>
         <Steps className="Section"/>
         <Cats className="Section"/>
         <Reviews className="Section"/>
+        <Footer className="Section"/>
       </div>
     );
   }

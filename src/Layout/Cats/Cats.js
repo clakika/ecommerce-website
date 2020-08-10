@@ -277,9 +277,9 @@ export class Cats extends Component {
                                 </div>
                             </div>
                         </div>
-                        <button>Learn more!</button>
+                        
                     </div>
-                    
+                    <button>Show all</button>
                 </div>
             </section>
         )
