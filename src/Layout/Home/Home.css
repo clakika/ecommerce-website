@@ -13,25 +13,38 @@
   .Header__Container {
     z-index: 10;
   }
+
+  .HeaderBorder {
+    border: 6px dotted rgba(255, 255, 255, 0.493);
+    padding: 1rem;
+  }
   
   .Header {
-    padding: 3rem;
+    padding: 1rem;
+    height: auto;
+    width: 30rem;
     text-align: center;
     margin: 0 auto;
     background-color: rgba(139, 99, 92, 0.4);
   }
-  
+
   .Header h1 {
-    font-family: 'Raleway'; 
+    font-family: 'Lobster Two', cursive;
+    font-weight:700;
+    font-size: 5em;
+    line-height: 2.1;
+    color: rgb(245, 247, 243);
+  }
+  
+  .Header h2 {
     font-weight:400;
     letter-spacing: 2px;
-    font-size: 3em;
+    font-size: 1em;
     line-height: 2.1;
     color: rgb(245, 247, 243);
   }
   
   .Header h4 {
-    font-family: 'Raleway'; 
     font-weight: 300;
     font-size: 1em;
     color: rgb(245, 247, 243);

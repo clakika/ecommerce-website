@@ -1,0 +1,120 @@
+nav .Navigation__Container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    max-height: 6rem;
+    width: 100%;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+    padding: 1.3rem;
+    transition: all .5s ease;
+}
+
+nav ul:last-child {
+    margin-left: auto;
+}
+
+.Navigation__CompanyName {
+  font-family: 'Lobster Two', cursive;
+  font-size: 2.7em;
+  color: white;
+  transition: all .5s ease;
+  margin-right: 3rem;
+}
+
+.Navigation__Container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.Navigation__MenuList {
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+}
+
+.Navigation__Link {
+  text-decoration: none;
+  margin-right: 25px;
+  color: white;
+  letter-spacing: 1px;
+  font-size: 1em;
+  transition: all .5s ease;
+  position: relative;
+}
+
+.Navigation__Link::after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: rgb(173, 139, 133);
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    top: 100%;
+    border-radius: 20%;
+    transition: all .4s ease;
+}
+
+.Navigation__Link:hover::after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    left: 0%;
+}
+
+
+.Navigation__Container ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.Navigation__MenuItem {
+  margin-right: 15px;
+  font-size: 1.3rem;
+  color: black;
+  transition: all .5s ease;
+}
+
+.Navigation__Logo {
+  width: 36%;
+}
+
+/*Apply styles after scrolling start*/
+.scrolling-active {
+    background-color: white;
+    box-shadow: 0 3px 1rem rgba(0,0,0,.1);
+}
+
+.scrolling-active .nav a {
+    color: #313131;
+}
+
+.scrolling-active nav {
+    height: 3rem;
+}
+
+.scrolling-active .Navigation__CompanyName {
+    color: rgb(173, 139, 133);
+    font-size: 2em;
+}
+
+.scrolling-active .Navigation__Link {
+    color: rgb(173, 139, 133);
+    font-size: 0.85em;
+}
+
+.scrolling-active .Navigation__MenuItem {
+    color: rgb(173, 139, 133);
+    font-size: 1rem;
+}
+
+.scrolling-active .Navigation__Link::after {
+    color: rgb(173, 139, 133);
+}
+/*Apply styles after scrolling end*/
