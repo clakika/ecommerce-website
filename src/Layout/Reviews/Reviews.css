@@ -1,5 +1,5 @@
 .Section__Reviews {
-    max-height: 70vh;
+    max-height: 80vh;
     position: relative;
     overflow: hidden;
     background-color: white;
@@ -13,7 +13,6 @@
   }
 
   .Reviews__Container {
-      background-color: blueviolet;
       max-width: 100vw;
       height: 50vh;
       display: flex;
@@ -24,11 +23,10 @@
 
   .Testimonial {
     width: 20rem;
-    height: 20rem;
-    background-color: coral;
-    display: flex;
-    flex-direction: column;
+    height: 21rem;
+    background-color: rgb(245, 247, 243);
     overflow: hidden;
+    padding: 2rem;
   }
 
   .Testimonial q {
@@ -39,19 +37,21 @@
     text-align: left;
   }
 
-  .UserReview {
+  .UserInfo {
     display: flex;
-    background-color: gold;
     height: auto;
     margin-top: 2rem;
+    justify-content: flex-start;
+    align-items: center;
   }
 
-  .UserReview p {
+  .UserInfo p {
 
   }
 
-  .UserReview img {
+  .UserInfo img {
       border-radius: 50%;
-      width: 10rem;
-      height: 10rem;
+      max-width: 5rem;
+      height: 5rem;
+      margin-right: 1rem;
   }
