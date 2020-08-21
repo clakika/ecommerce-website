@@ -3,6 +3,9 @@ import './Home.css';
 
 import headerImage from '../../img/header.jpg';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faPaw} from '@fortawesome/free-solid-svg-icons';
+
 export class Home extends Component {
     render() {
         return (    
@@ -12,8 +15,7 @@ export class Home extends Component {
                 <div className="HeaderBorder">
                     <div className="Header">
                     <h1>Catlingly</h1>
-                    <h2>Adopt your future best friend</h2>
-                    <h4>Discover now!</h4>
+                    <h2>Adopt your future best friend <FontAwesomeIcon icon={faPaw}/></h2>
                     </div>
                 </div>
                 

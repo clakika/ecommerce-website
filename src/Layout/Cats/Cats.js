@@ -11,7 +11,9 @@ import catSeven from '../../img/cat7.jpg';
 import catEight from '../../img/cat8.jpg';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCat, faMousePointer, faFileAlt, faHome, faPaw, faSmileBeam, faSearch, faMapMarkerAlt, faFemale, faMale, faHeart, faFilter, faBaseballBall} from '@fortawesome/free-solid-svg-icons';
+import { faCat, faPaw, faSmileBeam, faFilter, faBaseballBall} from '@fortawesome/free-solid-svg-icons';
+import { faHeart } from '@fortawesome/free-regular-svg-icons';
+
 
 export class Cats extends Component {
     render() {
