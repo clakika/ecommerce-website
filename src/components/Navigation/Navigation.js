@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './Navigation.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPaw, faSearch, faMapMarkerAlt, faHeart } from '@fortawesome/free-solid-svg-icons';
+import { faPaw, faSearch, faMapMarkerAlt, faHeart, faDiceTwo } from '@fortawesome/free-solid-svg-icons';
 
 export class Navigation extends Component {
     render() {
@@ -18,6 +18,22 @@ export class Navigation extends Component {
             <nav>
                 <div className="Navigation__Container">
                     <h3 className="Navigation__CompanyName">Catlingly</h3>
+
+                    <div className="MobileNav" onClick={() => {
+                        const MobileNav = document.querySelector('.MobileNav');
+                        const NavMenuList = document.querySelector('.Navigation__MenuList');
+                        const NavLink = document.querySelectorAll(".Navigation__MenuList li");
+              
+                        NavMenuList.classList.toggle("open");
+                        NavLink.forEach(link =>{
+                            link.classList.toggle("fade");
+                        })
+                    }}>
+                        <div className="Line"></div>
+                        <div className="Line"></div>
+                        <div className="Line"></div>
+                    </div>
+
                     <ul className="Navigation__MenuList">
                         <li>
                             <a href="#" className="Navigation__Link">home</a>

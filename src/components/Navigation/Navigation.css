@@ -86,35 +86,111 @@ nav ul:last-child {
 }
 
 /*Apply styles after scrolling start*/
-.scrolling-active {
-    background-color: white;
-    box-shadow: 0 3px 1rem rgba(0,0,0,.1);
+@media screen and (min-width: 750px) {
+      .scrolling-active {
+        background-color: white;
+        box-shadow: 0 3px 1rem rgba(0,0,0,.1);
+    }
+
+    .scrolling-active .nav a {
+        color: #313131;
+    }
+
+    .scrolling-active nav {
+        height: 3rem;
+    }
+
+    .scrolling-active .Navigation__CompanyName {
+        color: rgb(173, 139, 133);
+        font-size: 2em;
+    }
+
+    .scrolling-active .Navigation__Link {
+        color: rgb(173, 139, 133);
+        font-size: 0.85em;
+    }
+
+    .scrolling-active .Navigation__MenuItem {
+        color: rgb(173, 139, 133);
+        font-size: 1rem;
+    }
+
+    .scrolling-active .Navigation__Link::after {
+        color: rgb(173, 139, 133);
+    }
 }
 
-.scrolling-active .nav a {
-    color: #313131;
-}
-
-.scrolling-active nav {
-    height: 3rem;
-}
-
-.scrolling-active .Navigation__CompanyName {
-    color: rgb(173, 139, 133);
-    font-size: 2em;
-}
-
-.scrolling-active .Navigation__Link {
-    color: rgb(173, 139, 133);
-    font-size: 0.85em;
-}
-
-.scrolling-active .Navigation__MenuItem {
-    color: rgb(173, 139, 133);
-    font-size: 1rem;
-}
-
-.scrolling-active .Navigation__Link::after {
-    color: rgb(173, 139, 133);
-}
 /*Apply styles after scrolling end*/
+
+/*Media queries*/
+
+@media screen and (max-width: 750px) {
+  .Navigation__MenuList {
+    background-color: rgb(173, 139, 133);
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 100;
+    font-size: 2em;
+    line-height: 6rem;
+    display: none;
+    transition: all 0.7s ease-out;
+    clip-path: circle(100px at 100% -15%);
+    -webkit-clip-path: circle(100px at 100% -15%);
+    pointer-events: none;
+  }
+
+  .Navigation__MenuList.open {
+    clip-path: circle(1100px at 100% -15%);
+    -webkit-clip-path: circle(1100px at 100% -15%);
+    pointer-events: all;
+  }
+
+  .Navigation__MenuItem {
+    display: none;
+  }
+
+  .Line {
+    /*width: 1.5rem;
+    height: 3px;
+    margin: 5px;
+    background: cornsilk;
+    border-radius: 3px;*/
+
+    width: 1.5rem;
+    height: 3px;
+    margin: 5px;
+    background: cornsilk;
+    border-radius: 3px;
+  }
+
+  .MobileNav {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    z-index: 1000;
+  }
+
+  .Navigation__MenuList li {
+    opacity: 0;
+    font-size: 1.5em;
+    font-family: 'Lobster Two', cursive;
+  }
+
+  .Navigation__MenuList li:hover {
+    font-style: italic;
+  }
+
+ 
+
+  .Navigation__MenuList li.fade {
+    opacity: 1;
+  }
+    
+}
