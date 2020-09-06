@@ -287,15 +287,53 @@
 
   @media only screen and (max-width: 700px) {
     .CatPhoto {
-      max-width: 180px;
-      height: 220px;
-      position: relative;
+      width: 190px;
+      height: 230px;
+    }
+
+    .CatCard__Container {
+      width: 190px;
+      height: 230px;
     }
 
     .Cats {
       margin-top: 2rem;
       grid-template-columns: repeat(2, 13rem);
       grid-template-rows: repeat(4, 18rem);
+    }
+
+    .CatCard__Front {
+      width: 190px;
+      height: 230px;
+    }
+  
+    .CatCard__Back {
+        width: 200px;
+        height: 230px;
+    }
+
+    .CatCard__Back h4 {
+      transform: translateY(-11rem);
+      font-size: 1.5em;
+    }
+  
+    .CatCard__Back p {
+      transform: translate(1rem, -11.5rem);
+      font-size: 0.6em;
+    }
+  
+    .PersonalityIcon {
+      margin-top: 2px;
+      margin-right: 5px;
+      font-size: 1.3em;
+      color: rgb(173, 139, 133);
+    }
+
+    .CatCard__BackIcon {
+      font-size: 12em;
+      opacity: 0.3;
+      transform: translate(6.7rem, -3rem);
+      color: rgb(173, 139, 133);
     }
   }
 

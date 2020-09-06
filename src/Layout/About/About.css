@@ -55,6 +55,7 @@
   @media only screen and (max-width: 1200px) {
     .About__Container {
       margin-left: 3rem;
+
     }
 
     .About__Text p { 
@@ -66,6 +67,16 @@
     .About__Text p { 
       font-size: 0.9em;
     }
+
+    .About__Container {
+      margin-top: -5rem;
+
+    }
+
+    .Section__About {
+      height: 85vh;
+    }
+
   }
 
   @media only screen and (max-width: 800px) {
@@ -77,6 +88,14 @@
       grid-column: 1/-1;
       margin-left: 3rem;
       margin-right: 5rem;
+    }
+
+    .About__Container {
+      margin-top: -3rem;
+
+    }
+    .Section__About {
+      height: 90vh;
     }
 
   }

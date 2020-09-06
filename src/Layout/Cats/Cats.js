@@ -33,19 +33,19 @@ export class Cats extends Component {
                                     <FontAwesomeIcon className="CatCard__BackIcon" icon={faPaw}/>
                                     <h4>Sam</h4>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a.</p>
-                                    <p>PLAYFULNESS <br/>
+                                    <p className="PersonalityDescription">PLAYFULNESS <br/>
                                     <FontAwesomeIcon className="PersonalityIcon" icon={faBaseballBall}/>
                                     <FontAwesomeIcon className="PersonalityIcon" icon={faBaseballBall}/></p>
-                                    <p>NEED FOR ATTENTION
+                                    <p className="PersonalityDescription">NEED FOR ATTENTION
                                     <br/>
                                     <FontAwesomeIcon className="PersonalityIcon" icon={faHeart}/>
                                     <FontAwesomeIcon className="PersonalityIcon" icon={faHeart}/>
                                     <FontAwesomeIcon className="PersonalityIcon" icon={faHeart}/> </p>
-                                    <p>INDEPENDENCE
+                                    <p className="PersonalityDescription">INDEPENDENCE
                                     <br/>
                                     <FontAwesomeIcon className="PersonalityIcon" icon={faCat}/>
                                     <FontAwesomeIcon className="PersonalityIcon" icon={faCat}/> </p>
-                                    <p>FRIENDLINESS <br/>
+                                    <p className="PersonalityDescription">FRIENDLINESS <br/>
                                     <FontAwesomeIcon className="PersonalityIcon" icon={faSmileBeam}/>
                                     <FontAwesomeIcon className="PersonalityIcon" icon={faSmileBeam}/>
                                     <FontAwesomeIcon className="PersonalityIcon" icon={faSmileBeam}/>

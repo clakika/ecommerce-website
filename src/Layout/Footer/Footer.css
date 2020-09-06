@@ -1,5 +1,5 @@
 .Section__Footer {
-    max-height: 40vh;
+    height: 40vh;
     position: relative;
     overflow: hidden;
     background-color: rgb(245, 247, 243);
@@ -60,7 +60,7 @@
     border: none;
     border-bottom: 2px solid rgb(194, 194, 194);
     font-family: 'Raleway', sans-serif;
-    font-size: 0.7;
+    font-size: 1em;
     padding-bottom: 5px;
     background-color: rgb(245, 247, 243);
 }
@@ -95,4 +95,56 @@
     padding: 2rem;
     font-size: 0.7em;
 }
+
+@media only screen and (max-width: 800px) {
+    .Category h5 {
+        font-size: 0.9em;
+    }
+    
+    .List li {
+        font-size: 0.7em;
+        line-height: 2.5;
+    }
+
+    .Footer__Container {
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+
+    .Newsletter__Container p {
+        font-size: 0.7em;
+    }
+
+    .Newsletter__Container input {
+        font-size: 0.7em;
+    }
+  }
+
+@media only screen and (max-width: 650px) {
+    .Footer__Company h3{
+    font-size: 1.3em;
+    }    
+
+    .icon {
+        font-size: 0.8rem;
+    }
+
+    .iconNews {
+        font-size: 0.8rem;
+    }
+
+    .Newsletter__Container {
+        width: 10rem;
+    }
+
+    .Newsletter__Container p{
+        line-height: 2;
+    }
+
+    .Newsletter__Container button {
+        padding: 0.4rem;
+        font-size: 0.6em;
+    }
+}
+
 
