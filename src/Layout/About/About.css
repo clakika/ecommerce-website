@@ -21,6 +21,7 @@
     grid-column-gap: 2rem;
     grid-template-rows: 1;
     justify-content: center;
+    align-items: center;
   }
   
   .About__Image {
@@ -50,4 +51,32 @@
   }
   
   /* ABOUT SECTION END { }*/ 
-  
+
+  @media only screen and (max-width: 1200px) {
+    .About__Container {
+      margin-left: 3rem;
+    }
+
+    .About__Text p { 
+      font-size: 1em;
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+    .About__Text p { 
+      font-size: 0.9em;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    .About__Image {
+      display: none;
+    }
+
+    .About__Text {
+      grid-column: 1/-1;
+      margin-left: 3rem;
+      margin-right: 5rem;
+    }
+
+  }

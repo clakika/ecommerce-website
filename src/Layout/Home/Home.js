@@ -10,7 +10,6 @@ export class Home extends Component {
     render() {
         return (    
         <section className="Section Section__Home">
-            <img className="Header__Image" src={headerImage} />
             <div className="Header__Container">
                 <div className="HeaderBorder">
                     <div className="Header">

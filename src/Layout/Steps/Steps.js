@@ -12,29 +12,29 @@ export class Steps extends Component {
                     <h2>How does it work?</h2>
                 <div className="Steps">
                     <div className="StepOne">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <FontAwesomeIcon className="Steps__Icon" icon={faCat} />
                     <FontAwesomeIcon className="Steps__Icon" icon={faMousePointer} />
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
 
                     <div className="StepTwo">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <FontAwesomeIcon className="Steps__Icon" icon={faFileAlt} />
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
 
                     <div className="StepThree">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <FontAwesomeIcon className="Steps__Icon" icon={faPaw} /> 
                     <FontAwesomeIcon className="Steps__Icon" icon={faHome} />
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
 
                     <div className="StepFour">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <FontAwesomeIcon className="Steps__Icon" icon={faCat} /> 
                     <FontAwesomeIcon className="Steps__Icon" icon={faFemale} /> 
                     <FontAwesomeIcon className="Steps__Icon" icon={faHome} />
                     <FontAwesomeIcon className="Steps__Icon" icon={faCat} />
                     <FontAwesomeIcon className="Steps__Icon" icon={faMale} />
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
                 </div>
                 </div>
