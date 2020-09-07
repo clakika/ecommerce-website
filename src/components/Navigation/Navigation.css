@@ -76,7 +76,7 @@ nav ul:last-child {
 
 .Navigation__MenuItem {
   margin-right: 15px;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   color: #f0ece3;
   transition: all .5s ease;
 }
@@ -122,8 +122,10 @@ nav ul:last-child {
   transform: translate(120%, -50%);
   width: 20px;
   height: 20px;
+  font-size: 15px;
   pointer-events: none;
 }
+
 
 .SearchContainer .SearchBar .SearchIcon path {
   fill: rgb(173, 139, 133);
@@ -181,9 +183,41 @@ nav ul:last-child {
   color: rgb(165, 131, 125)
 }*/
 
+.scrolling-active {
+  background-color: white;
+  box-shadow: 0 3px 1rem rgba(0,0,0,.1);
+}
+
+.scrolling-active .nav a {
+  color: #313131;
+}
+
+.scrolling-active nav {
+  height: 3rem;
+}
+
+.scrolling-active .Navigation__CompanyName {
+  color: rgb(173, 139, 133);
+  font-size: 2em;
+}
+
+.scrolling-active .Navigation__Link {
+  color: rgb(173, 139, 133);
+  font-size: 15px;
+}
+
+.scrolling-active .Navigation__MenuItem {
+  color: rgb(173, 139, 133);
+  font-size: 1.5em;
+}
+
+.scrolling-active .Navigation__Link::after {
+  color: rgb(173, 139, 133);
+}
+
 /*Apply styles after scrolling start*/
 @media screen and (min-width: 750px) {
-      .scrolling-active {
+    .scrolling-active {
         background-color: white;
         box-shadow: 0 3px 1rem rgba(0,0,0,.1);
     }
@@ -201,19 +235,15 @@ nav ul:last-child {
         font-size: 2em;
     }
 
-    .scrolling-active .Navigation__Link {
-        color: rgb(173, 139, 133);
-        font-size: 0.85em;
-    }
 
     .scrolling-active .Navigation__MenuItem {
-        color: rgb(173, 139, 133);
-        font-size: 1rem;
+        font-size: 1.5em;
     }
 
     .scrolling-active .Navigation__Link::after {
-        color: rgb(173, 139, 133);
+      color: white;
     }
+
 }
 
 /*Apply styles after scrolling end*/
@@ -249,7 +279,7 @@ nav ul:last-child {
   }
 
   .Navigation__MenuItem {
-    display: none;
+    font-size: 1.5em;
   }
 
   .Line {
@@ -272,6 +302,12 @@ nav ul:last-child {
     cursor: pointer;
     right: 5%;
     z-index: 1000;
+  }
+
+  
+  .Navigation__MenuIcons {
+    margin-right: 4rem;
+    margin-top: 0.7rem;
   }
 
   .MobileNav.open .Line:nth-child(1) {

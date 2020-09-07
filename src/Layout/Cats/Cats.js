@@ -27,6 +27,7 @@ export class Cats extends Component {
                         <div className="CatCard__Container">
                             <div className="CatCard CatCard--1">
                                 <div className="CatCard__Front">
+
                                     <img className="CatPhoto" src={catOne}/>
                                 </div>
                                 <div className="CatCard__Back">
@@ -52,7 +53,7 @@ export class Cats extends Component {
                                     <FontAwesomeIcon className="PersonalityIcon" icon={faSmileBeam}/> </p>
                                 </div>
                             </div>
-                            <div>
+                            <div className="IconsContainer">
                                 <FontAwesomeIcon className="FlipIcon FlipIcon--1" icon={faArrowAltCircleLeft} onClick={() => {
                                     const CatCard = document.querySelector(".CatCard--1");
                                     const FlipIcon = document.querySelector(".FlipIcon--1");
