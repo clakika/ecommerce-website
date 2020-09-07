@@ -51,9 +51,12 @@ export class Navigation extends Component {
                         </li>
                     </ul>
                     <ul className="Navigation__MenuIcons">
-                        <li>
-                            <a href="#"><FontAwesomeIcon className="Navigation__MenuItem" icon={faSearch} /></a>
-                        </li>
+                        <div className="SearchContainer">
+                            <div className="SearchBar">
+                                <input type="text" className="SearchInput"></input>
+                                <FontAwesomeIcon className="Navigation__MenuItem SearchIcon" icon={faSearch}/>
+                            </div>
+                        </div>
                         <li>
                             <a href="#"><FontAwesomeIcon className="Navigation__MenuItem" icon={faPaw} /></a>
                         </li>

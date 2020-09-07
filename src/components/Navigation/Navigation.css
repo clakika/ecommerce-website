@@ -85,6 +85,102 @@ nav ul:last-child {
   width: 36%;
 }
 
+.SearchContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-0.9rem, -0.3rem);
+}
+.SearchContainer .SearchBar {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 53px;
+  transition: 0.4s linear;
+  overflow: hidden;
+}
+
+.SearchContainer .SearchBar .SearchInput {
+  display: block;
+  appearance: none;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  background-color:#f0ece3;
+  padding: 8px;
+  color: rgb(173, 139, 133);
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+
+.SearchContainer .SearchBar .SearchIcon {
+  position: absolute;
+  top: 50%;
+  right: calc(50px / 2);
+  transform: translate(120%, -50%);
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
+}
+
+.SearchContainer .SearchBar .SearchIcon path {
+  fill: rgb(173, 139, 133);
+  transition: 0.4s linear;
+  position: absolute;
+}
+.SearchContainer .SearchBar:focus-within {
+  max-width: 300px;
+}
+.SearchContainer .SearchBar:focus-within .SearchInput {
+  background-color:  #f0ece3;
+  padding-right: 50px;
+}
+.SearchContainer .SearchBar:focus-within .SearchIcon path {
+  fill: rgb(165, 131, 125);
+}
+
+/*.SearchBar.clicked {
+  width: 20rem;
+  height: 2.1rem;
+  background-color: #f0ece3;
+  border-radius: 25px;
+  transition: all .3s ease-out;
+  position: relative;
+  transform: translate(-1rem, -0.5rem);
+}
+
+.SearchBar input.clicked {
+  width: 15rem;
+  transform: translate(3.5rem, 0.4rem);
+  border-bottom: 1px solid rgb(173, 139, 133);
+  border-top: 1px solid #f0ece3;
+  border-left: 1px solid #f0ece3;
+  border-right: 1px solid #f0ece3;
+  background-color: #f0ece3;
+  transition: all .3s ease-out;
+  display: block;
+}
+
+.SearchBar input:focus {
+  outline: none;
+}
+
+.SearchInput {
+  display: none;
+}
+
+.SearchIcon {
+  transition: all .3s ease-out;
+}
+
+.SearchIcon.clicked {
+  position: absolute;
+  transform: translate(0.5rem, 0.5rem);
+  color: rgb(165, 131, 125)
+}*/
+
 /*Apply styles after scrolling start*/
 @media screen and (min-width: 750px) {
       .scrolling-active {
