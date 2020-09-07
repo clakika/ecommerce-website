@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 
+import {BrowserRouter as Router} from 'react-router-dom';
+
 import Navigation from '../src/components/Navigation/Navigation';
 import Home from '../src/Layout/Home/Home';
 import About from '../src/Layout/About/About';
@@ -13,6 +15,7 @@ class App extends Component {
   render() {
     return (
       <div>
+        <Router>
         <Navigation/>
         <Home className="Section"/>
         <About className="Section"/>
@@ -20,6 +23,7 @@ class App extends Component {
         <Cats className="Section"/>
         <Reviews className="Section"/>
         <Footer className="Section"/>
+        </Router>
       </div>
     );
   }

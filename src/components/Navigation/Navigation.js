@@ -1,8 +1,13 @@
 import React, { Component } from 'react';
 import './Navigation.css';
 
+import { Link } from 'react-scroll';
+import { BrowserRouter as Router } from 'react-router-dom';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaw, faSearch, faMapMarkerAlt, faHeart } from '@fortawesome/free-solid-svg-icons';
+
+
 
 export class Navigation extends Component {
     render() {
@@ -10,10 +15,10 @@ export class Navigation extends Component {
         window.addEventListener('scroll', (event) => {
             let nav = document.querySelector("nav");
             let windowPosition = window.scrollY > 0;
-    
+
             nav.classList.toggle("scrolling-active", windowPosition);
-          });
-    
+        });
+
         return (
             <nav>
                 <div className="Navigation__Container">
@@ -23,11 +28,11 @@ export class Navigation extends Component {
                         const MobileNav = document.querySelector('.MobileNav');
                         const NavMenuList = document.querySelector('.Navigation__MenuList');
                         const NavLink = document.querySelectorAll(".Navigation__MenuList li");
-                        
+
                         MobileNav.classList.toggle("open");
-              
+
                         NavMenuList.classList.toggle("open");
-                        NavLink.forEach(link =>{
+                        NavLink.forEach(link => {
                             link.classList.toggle("fade");
                         })
                     }}>
@@ -35,26 +40,62 @@ export class Navigation extends Component {
                         <div className="Line"></div>
                         <div className="Line"></div>
                     </div>
+                    <Router>
+                        <ul className="Navigation__MenuList">
+                            <Link exact to='/'
+                                activeClass="active"
+                                to="home"
+                                spy={true}
+                                smooth={true}
+                                offset={0}
+                                duration={300}>
+                                <li>
+                                    <a href="#" className="Navigation__Link">home</a>
+                                </li>
+                            </Link>
 
-                    <ul className="Navigation__MenuList">
-                        <li>
-                            <a href="#" className="Navigation__Link">home</a>
-                        </li>
-                        <li>
-                            <a href="#" className="Navigation__Link">about</a>
-                        </li>
-                        <li>
-                            <a href="#" className="Navigation__Link">cats</a>
-                        </li>
-                        <li>
-                            <a href="#" className="Navigation__Link">contacts</a>
-                        </li>
-                    </ul>
+                            <Link to='/about'
+                                activeClass="active"
+                                to="about"
+                                spy={true}
+                                smooth={true}
+                                offset={0}
+                                duration={300}>
+                                <li>
+                                    <a href="#" className="Navigation__Link">about</a>
+                                </li>
+                            </Link>
+
+                            <Link to='/cats'
+                                activeClass="active"
+                                to="cats"
+                                spy={true}
+                                smooth={true}
+                                offset={0}
+                                duration={300}>
+                                <li>
+                                    <a href="#" className="Navigation__Link">cats</a>
+                                </li>
+                            </Link>
+
+                            <Link to='/contacts'
+                                activeClass="active"
+                                to="contact"
+                                spy={true}
+                                smooth={true}
+                                offset={0}
+                                duration={300}>
+                                <li>
+                                    <a href="#" className="Navigation__Link">contacts</a>
+                                </li>
+                            </Link>
+                        </ul>
+                    </Router>
                     <ul className="Navigation__MenuIcons">
                         <div className="SearchContainer">
                             <div className="SearchBar">
                                 <input type="text" className="SearchInput"></input>
-                                <FontAwesomeIcon className="Navigation__MenuItem SearchIcon" icon={faSearch}/>
+                                <FontAwesomeIcon className="Navigation__MenuItem SearchIcon" icon={faSearch} />
                             </div>
                         </div>
                         <li>

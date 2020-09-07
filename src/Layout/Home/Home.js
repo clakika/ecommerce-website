@@ -1,25 +1,29 @@
 import React, { Component } from 'react';
 import './Home.css';
 
+import { BrowserRouter as Router } from 'react-router-dom';
+
 import headerImage from '../../img/header.jpg';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faPaw} from '@fortawesome/free-solid-svg-icons';
+import { faPaw } from '@fortawesome/free-solid-svg-icons';
 
 export class Home extends Component {
     render() {
-        return (    
-        <section className="Section Section__Home">
-            <div className="Header__Container">
-                <div className="HeaderBorder">
-                    <div className="Header">
-                    <h1>Catlingly</h1>
-                    <h2>Adopt your future best friend <FontAwesomeIcon icon={faPaw}/></h2>
+        return (
+            <Router>
+                <section className="Section Section__Home" id="home">
+                    <div className="Header__Container">
+                        <div className="HeaderBorder">
+                            <div className="Header">
+                                <h1>Catlingly</h1>
+                                <h2>Adopt your future best friend <FontAwesomeIcon icon={faPaw} /></h2>
+                            </div>
+                        </div>
+
                     </div>
-                </div>
-                
-            </div>
-        </section>
+                </section>
+            </Router>
         )
     }
 }
