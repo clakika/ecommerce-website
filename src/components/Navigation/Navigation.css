@@ -140,7 +140,7 @@ nav ul:last-child {
     font-size: 2em;
     line-height: 6rem;
     display: none;
-    transition: all 0.7s ease-out;
+    transition: all 0.4s ease-out;
     clip-path: circle(100px at 100% -15%);
     -webkit-clip-path: circle(100px at 100% -15%);
     pointer-events: none;
@@ -168,6 +168,7 @@ nav ul:last-child {
     margin: 5px;
     background: cornsilk;
     border-radius: 3px;
+    transition: all 0.2s ease-in-out;
   }
 
   .MobileNav {
@@ -175,6 +176,19 @@ nav ul:last-child {
     cursor: pointer;
     right: 5%;
     z-index: 1000;
+  }
+
+  .MobileNav.open .Line:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 5px);
+  }
+
+  .MobileNav.open .Line:nth-child(2) {
+    transform: translateX(-2rem);
+    background:transparent;
+  }
+
+  .MobileNav.open .Line:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -5px);
   }
 
   .Navigation__MenuList li {
@@ -186,8 +200,6 @@ nav ul:last-child {
   .Navigation__MenuList li:hover {
     font-style: italic;
   }
-
- 
 
   .Navigation__MenuList li.fade {
     opacity: 1;

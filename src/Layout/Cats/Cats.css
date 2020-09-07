@@ -57,7 +57,7 @@
     transition: all 0.8s ease;
   }
 
-  .CatCard:hover {
+  .CatCard.rotate {
     transform: rotateY(180deg);
   }
 
@@ -101,6 +101,44 @@
     font-size: 1.3em;
     color: rgb(173, 139, 133);
   }
+
+  .FlipIcon {
+    font-size: 2em;
+    color: rgb(173, 139, 133);
+    z-index: 200;
+    position: absolute;
+    top: 102%;
+    left: 2%;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .FlipIcon.rotate {
+    transform: rotateY(180deg);
+  }
+
+  .LikeIcon {
+    font-size: 2em;
+    color: rgb(173, 139, 133);
+    z-index: 200;
+    position: absolute;
+    top: 102%;
+    right: 2%;
+    cursor: pointer;
+    overflow: hidden;
+    clip-path: circle(0px at 50% 50%);
+    -webkit-clip-path: circle(0px at 50% 50%);
+  }
+
+  .LikeIcon.clicked {
+    color: white;
+    font-size: 1.5em;
+    clip-path: circle(100px at 50% 50%);
+    -webkit-clip-path: circle(100px at 50% 50%);
+    border-radius: 25px;
+    background-color: rgb(173, 139, 133);
+  }
+
 
   .CatCard__BackIcon {
     font-size: 12em;
@@ -321,7 +359,7 @@
       transform: translate(1rem, -11.5rem);
       font-size: 0.6em;
     }
-  
+
     .PersonalityIcon {
       margin-top: 2px;
       margin-right: 5px;

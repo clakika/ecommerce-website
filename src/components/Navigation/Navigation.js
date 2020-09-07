@@ -23,6 +23,8 @@ export class Navigation extends Component {
                         const MobileNav = document.querySelector('.MobileNav');
                         const NavMenuList = document.querySelector('.Navigation__MenuList');
                         const NavLink = document.querySelectorAll(".Navigation__MenuList li");
+                        
+                        MobileNav.classList.toggle("open");
               
                         NavMenuList.classList.toggle("open");
                         NavLink.forEach(link =>{

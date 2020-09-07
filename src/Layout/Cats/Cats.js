@@ -11,7 +11,7 @@ import catSeven from '../../img/cat7.jpg';
 import catEight from '../../img/cat8.jpg';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCat, faPaw, faSmileBeam, faFilter, faBaseballBall} from '@fortawesome/free-solid-svg-icons';
+import { faCat, faPaw, faSmileBeam, faFilter, faBaseballBall, faArrowAltCircleLeft} from '@fortawesome/free-solid-svg-icons';
 import { faHeart } from '@fortawesome/free-regular-svg-icons';
 
 
@@ -51,6 +51,20 @@ export class Cats extends Component {
                                     <FontAwesomeIcon className="PersonalityIcon" icon={faSmileBeam}/>
                                     <FontAwesomeIcon className="PersonalityIcon" icon={faSmileBeam}/> </p>
                                 </div>
+                            </div>
+                            <div>
+                                <FontAwesomeIcon className="FlipIcon" icon={faArrowAltCircleLeft} onClick={() => {
+                                    const CatCard = document.querySelector(".CatCard");
+                                    const FlipIcon = document.querySelector(".FlipIcon");
+
+                                    CatCard.classList.toggle("rotate");
+                                    FlipIcon.classList.toggle("rotate");
+                                }}/>
+                                <FontAwesomeIcon className="LikeIcon" icon={faHeart} onClick={() => {
+                                  const LikeIcon = document.querySelector(".LikeIcon");
+                                  
+                                  LikeIcon.classList.toggle("clicked");
+                                }}/>
                             </div>
                         </div>
 
