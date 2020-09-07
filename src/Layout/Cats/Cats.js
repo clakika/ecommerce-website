@@ -25,7 +25,7 @@ export class Cats extends Component {
                     <div className="Cats">
 
                         <div className="CatCard__Container">
-                            <div className="CatCard">
+                            <div className="CatCard CatCard--1">
                                 <div className="CatCard__Front">
                                     <img className="CatPhoto" src={catOne}/>
                                 </div>
@@ -53,15 +53,15 @@ export class Cats extends Component {
                                 </div>
                             </div>
                             <div>
-                                <FontAwesomeIcon className="FlipIcon" icon={faArrowAltCircleLeft} onClick={() => {
-                                    const CatCard = document.querySelector(".CatCard");
-                                    const FlipIcon = document.querySelector(".FlipIcon");
+                                <FontAwesomeIcon className="FlipIcon FlipIcon--1" icon={faArrowAltCircleLeft} onClick={() => {
+                                    const CatCard = document.querySelector(".CatCard--1");
+                                    const FlipIcon = document.querySelector(".FlipIcon--1");
 
                                     CatCard.classList.toggle("rotate");
                                     FlipIcon.classList.toggle("rotate");
                                 }}/>
-                                <FontAwesomeIcon className="LikeIcon" icon={faHeart} onClick={() => {
-                                  const LikeIcon = document.querySelector(".LikeIcon");
+                                <FontAwesomeIcon className="LikeIcon LikeIcon--1" icon={faHeart} onClick={() => {
+                                  const LikeIcon = document.querySelector(".LikeIcon--1");
                                   
                                   LikeIcon.classList.toggle("clicked");
                                 }}/>
@@ -69,7 +69,7 @@ export class Cats extends Component {
                         </div>
 
                         <div className="CatCard__Container">
-                            <div className="CatCard">
+                            <div className="CatCard CatCard--2">
                                 <div className="CatCard__Front">
                                     <img className="CatPhoto" src={catTwo}/>
                                 </div>
@@ -101,10 +101,24 @@ export class Cats extends Component {
                                     <FontAwesomeIcon className="PersonalityIcon" icon={faSmileBeam}/></p>
                                 </div>
                             </div>
+                            <div>
+                                <FontAwesomeIcon className="FlipIcon FlipIcon--2" icon={faArrowAltCircleLeft} onClick={() => {
+                                    const CatCardTwo = document.querySelector(".CatCard--2");
+                                    const FlipIcon = document.querySelector(".FlipIcon--2");
+
+                                    CatCardTwo.classList.toggle("rotate");
+                                    FlipIcon.classList.toggle("rotate");
+                                }}/>
+                                <FontAwesomeIcon className="LikeIcon LikeIcon--2" icon={faHeart} onClick={() => {
+                                  const LikeIcon = document.querySelector(".LikeIcon--2");
+                                  
+                                  LikeIcon.classList.toggle("clicked");
+                                }}/>
+                            </div>
                         </div>
 
                         <div className="CatCard__Container">
-                            <div className="CatCard">
+                            <div className="CatCard CatCard--3">
                                 <div className="CatCard__Front">
                                     <img className="CatPhoto" src={catThree}/>
                                 </div>
@@ -132,10 +146,24 @@ export class Cats extends Component {
                                     <FontAwesomeIcon className="PersonalityIcon" icon={faSmileBeam}/> </p>
                                 </div>
                             </div>
+                             <div>
+                                <FontAwesomeIcon className="FlipIcon FlipIcon--3" icon={faArrowAltCircleLeft} onClick={() => {
+                                    const CatCard = document.querySelector(".CatCard--3");
+                                    const FlipIcon = document.querySelector(".FlipIcon--3");
+
+                                    CatCard.classList.toggle("rotate");
+                                    FlipIcon.classList.toggle("rotate");
+                                }}/>
+                                <FontAwesomeIcon className="LikeIcon LikeIcon--3" icon={faHeart} onClick={() => {
+                                  const LikeIcon = document.querySelector(".LikeIcon--3");
+                                  
+                                  LikeIcon.classList.toggle("clicked");
+                                }}/>
+                            </div>
                         </div>
 
                         <div className="CatCard__Container">
-                            <div className="CatCard">
+                            <div className="CatCard CatCard--4">
                                 <div className="CatCard__Front">
                                     <img className="CatPhoto" src={catFour}/>
                                 </div>
@@ -163,10 +191,24 @@ export class Cats extends Component {
                                     <FontAwesomeIcon className="PersonalityIcon" icon={faSmileBeam}/> </p>
                                 </div>
                             </div>
+                             <div>
+                                <FontAwesomeIcon className="FlipIcon FlipIcon--4" icon={faArrowAltCircleLeft} onClick={() => {
+                                    const CatCard = document.querySelector(".CatCard--4");
+                                    const FlipIcon = document.querySelector(".FlipIcon--4");
+
+                                    CatCard.classList.toggle("rotate");
+                                    FlipIcon.classList.toggle("rotate");
+                                }}/>
+                                <FontAwesomeIcon className="LikeIcon LikeIcon--4" icon={faHeart} onClick={() => {
+                                  const LikeIcon = document.querySelector(".LikeIcon--4");
+                                  
+                                  LikeIcon.classList.toggle("clicked");
+                                }}/>
+                            </div>
                         </div>
 
                         <div className="CatCard__Container">
-                            <div className="CatCard">
+                            <div className="CatCard CatCard--5">
                                 <div className="CatCard__Front">
                                     <img className="CatPhoto" src={catFive}/>
                                 </div>
@@ -195,10 +237,24 @@ export class Cats extends Component {
                                     <FontAwesomeIcon className="PersonalityIcon" icon={faSmileBeam}/>
                                     <FontAwesomeIcon className="PersonalityIcon" icon={faSmileBeam}/> </p></div>
                             </div>
+                             <div>
+                                <FontAwesomeIcon className="FlipIcon FlipIcon--5" icon={faArrowAltCircleLeft} onClick={() => {
+                                    const CatCard = document.querySelector(".CatCard--5");
+                                    const FlipIcon = document.querySelector(".FlipIcon--5");
+
+                                    CatCard.classList.toggle("rotate");
+                                    FlipIcon.classList.toggle("rotate");
+                                }}/>
+                                <FontAwesomeIcon className="LikeIcon LikeIcon--5" icon={faHeart} onClick={() => {
+                                  const LikeIcon = document.querySelector(".LikeIcon--5");
+                                  
+                                  LikeIcon.classList.toggle("clicked");
+                                }}/>
+                            </div>
                         </div>
 
                         <div className="CatCard__Container">
-                            <div className="CatCard">
+                            <div className="CatCard CatCard--6">
                                 <div className="CatCard__Front">
                                     <img className="CatPhoto" src={catSix}/>
                                 </div>
@@ -226,10 +282,24 @@ export class Cats extends Component {
                                     <FontAwesomeIcon className="PersonalityIcon" icon={faSmileBeam}/> </p>
                                 </div>
                             </div>
+                             <div>
+                                <FontAwesomeIcon className="FlipIcon FlipIcon--6" icon={faArrowAltCircleLeft} onClick={() => {
+                                    const CatCard = document.querySelector(".CatCard--6");
+                                    const FlipIcon = document.querySelector(".FlipIcon--6");
+
+                                    CatCard.classList.toggle("rotate");
+                                    FlipIcon.classList.toggle("rotate");
+                                }}/>
+                                <FontAwesomeIcon className="LikeIcon LikeIcon--6" icon={faHeart} onClick={() => {
+                                  const LikeIcon = document.querySelector(".LikeIcon--6");
+                                  
+                                  LikeIcon.classList.toggle("clicked");
+                                }}/>
+                            </div>
                         </div>
 
                         <div className="CatCard__Container">
-                            <div className="CatCard">
+                            <div className="CatCard CatCard--7">
                                 <div className="CatCard__Front">
                                     <img className="CatPhoto" src={catSeven}/>
                                 </div>
@@ -261,10 +331,24 @@ export class Cats extends Component {
                                     <FontAwesomeIcon className="PersonalityIcon" icon={faSmileBeam}/> </p>
                                 </div>
                             </div>
+                             <div>
+                                <FontAwesomeIcon className="FlipIcon FlipIcon--7" icon={faArrowAltCircleLeft} onClick={() => {
+                                    const CatCard = document.querySelector(".CatCard--7");
+                                    const FlipIcon = document.querySelector(".FlipIcon--7");
+
+                                    CatCard.classList.toggle("rotate");
+                                    FlipIcon.classList.toggle("rotate");
+                                }}/>
+                                <FontAwesomeIcon className="LikeIcon LikeIcon--7" icon={faHeart} onClick={() => {
+                                  const LikeIcon = document.querySelector(".LikeIcon--7");
+                                  
+                                  LikeIcon.classList.toggle("clicked");
+                                }}/>
+                            </div>
                         </div>
 
                         <div className="CatCard__Container">
-                            <div className="CatCard">
+                            <div className="CatCard CatCard--8">
                                 <div className="CatCard__Front">
                                     <img className="CatPhoto" src={catEight}/>
                                 </div>
@@ -291,6 +375,20 @@ export class Cats extends Component {
                                     <FontAwesomeIcon className="PersonalityIcon" icon={faSmileBeam}/>
                                     <FontAwesomeIcon className="PersonalityIcon" icon={faSmileBeam}/> </p>
                                 </div>
+                            </div>
+                             <div>
+                                <FontAwesomeIcon className="FlipIcon FlipIcon--8" icon={faArrowAltCircleLeft} onClick={() => {
+                                    const CatCard = document.querySelector(".CatCard--8");
+                                    const FlipIcon = document.querySelector(".FlipIcon--8");
+
+                                    CatCard.classList.toggle("rotate");
+                                    FlipIcon.classList.toggle("rotate");
+                                }}/>
+                                <FontAwesomeIcon className="LikeIcon LikeIcon--8" icon={faHeart} onClick={() => {
+                                  const LikeIcon = document.querySelector(".LikeIcon--8");
+                                  
+                                  LikeIcon.classList.toggle("clicked");
+                                }}/>
                             </div>
                         </div>
                         

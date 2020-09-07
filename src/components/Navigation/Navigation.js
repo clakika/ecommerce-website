@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './Navigation.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPaw, faSearch, faMapMarkerAlt, faHeart, faDiceTwo } from '@fortawesome/free-solid-svg-icons';
+import { faPaw, faSearch, faMapMarkerAlt, faHeart } from '@fortawesome/free-solid-svg-icons';
 
 export class Navigation extends Component {
     render() {
