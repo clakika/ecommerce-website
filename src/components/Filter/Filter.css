@@ -1,10 +1,11 @@
 .FilterBox {
     display: grid;
-    grid-template-columns: repeat(4, 20rem);
-    grid-template-rows: 8rem;
-    width: 95%;
+    grid-template-columns: repeat(4, 10rem);
+    grid-column-gap: 0rem;
+    grid-template-rows: 6rem;
+    width: 47%;
     justify-items: center;
-    align-items: center;
+    align-items: flex-end;
     margin-left: 2rem ;
     border-radius: 5px;
     background-color: rgba(173, 139, 133, 0.26);
@@ -34,7 +35,9 @@
     text-align: center;
     font-size: 1.2em;
     color:rgb(165, 131, 125);
-    margin-top: 0.2rem;
+    margin-top: -0.2rem;
+    margin-left: -50px;
+    margin-bottom: 10px;
 }
 
 .FilterBox div:nth-child(1) {
@@ -55,8 +58,8 @@
 
 .FilterBox p {
     text-align: left;
-    margin-bottom: 1rem;
-    font-size: 0.8em;
+    margin-bottom: 0.6rem;
+    font-size: 0.6em;
 }
 
 .SlideContainer {
@@ -66,8 +69,8 @@
 .PersonalityRange {
     -webkit-appearance: none;  
     appearance: none;
-    width: 100%; 
-    height: 15px; 
+    width: 70%; 
+    height: 12px; 
     background: rgb(255, 255, 255);
     outline: none; 
     opacity: 0.7; 
@@ -83,16 +86,16 @@
   .PersonalityRange::-webkit-slider-thumb {
     -webkit-appearance: none; 
     appearance: none;
-    width: 20px; 
-    height: 20px; 
+    width: 15px; 
+    height: 15px; 
     border-radius: 40px;
     background: rgb(173, 139, 133);
     cursor: pointer;
   }
   
   .PersonalityRange::-moz-range-thumb {
-    width: 25px; /* Set a specific slider handle width */
-    height: 25px; /* Slider handle height */
+    width: 15px; /* Set a specific slider handle width */
+    height: 15px; /* Slider handle height */
     background: rgb(173, 139, 133);; /* Green background */
     cursor: pointer; /* Cursor on hover */
   }
