@@ -143,6 +143,17 @@ nav ul:last-child {
   fill: rgb(165, 131, 125);
 }
 
+.NumberOfLikes {
+  width: 20px;
+  height: 20px;
+  background-color: rgba(168, 131, 125, 0.534);
+  text-align: center;
+  font-size: 1em;
+  color: #f0ece3;
+  border-radius: 40px;
+  transform: translate(0.5rem, -0.7rem);
+}
+
 /*.SearchBar.clicked {
   width: 20rem;
   height: 2.1rem;

@@ -103,6 +103,7 @@ export class Navigation extends Component {
                         </li>
                         <li>
                             <a href="#"><FontAwesomeIcon className="Navigation__MenuItem" icon={faHeart} /></a>
+                            <div className="NumberOfLikes">0</div>
                         </li>
                         <li>
                             <a href="#"><FontAwesomeIcon className="Navigation__MenuItem" icon={faMapMarkerAlt} /></a>

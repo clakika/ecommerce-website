@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './Cats.css';
 
+import Filter from '../../components/Filter/Filter';
+
 import { BrowserRouter as Router } from 'react-router-dom';
 
 import catOne from '../../img/cat1.jpg';
@@ -18,13 +20,34 @@ import { faHeart } from '@fortawesome/free-regular-svg-icons';
 
 
 export class Cats extends Component {
+    /*constructor(props) {
+    super(props);
+    this.state = {
+        clicks: 0,
+        CatOne: false,
+        CatTwo: false,
+        CatThree: false,
+        CatFour: false,
+        CatFive: false,
+        CatSix: false,
+        CatSeven: false,
+        catEight: false
+        };
+    }
+
+    IncrementLikes = () => {
+        const LikeButton = document.querySelector(".NumberOfLikes");
+        this.setState({ clicks: this.setState.clicks + 1})
+    }*/
+
+
     render() {
         return (
             <Router>
                 <section className="Section Section__CatList" id="cats">
                     <div className="CatList__Container">
                         <h2>Get to know them!</h2>
-                        <p><FontAwesomeIcon className="Steps__Icon" icon={faFilter} />Filter</p>
+                        <Filter />
                         <div className="Cats">
 
                             <div className="CatCard__Container">
@@ -66,7 +89,6 @@ export class Cats extends Component {
                                     }} />
                                     <FontAwesomeIcon className="LikeIcon LikeIcon--1" icon={faHeart} onClick={() => {
                                         const LikeIcon = document.querySelector(".LikeIcon--1");
-
                                         LikeIcon.classList.toggle("clicked");
                                     }} />
                                 </div>
