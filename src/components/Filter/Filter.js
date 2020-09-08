@@ -10,7 +10,11 @@ export class Filter extends Component {
     render() {
         return (
             <div className="Filter">
-                <div className="FilterIcon">
+                <div className="FilterIcon" onClick={() => {
+                        const FilterBox = document.querySelector('.FilterBox');
+
+                        FilterBox.classList.toggle("openBox");
+                }}> 
                     <FontAwesomeIcon className="Steps__Icon" icon={faFilter} />
                 </div>
                 <div className="FilterBox">
