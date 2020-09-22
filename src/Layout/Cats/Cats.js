@@ -20,26 +20,15 @@ import { faHeart } from '@fortawesome/free-regular-svg-icons';
 
 
 export class Cats extends Component {
-    /*constructor(props) {
-    super(props);
-    this.state = {
-        clicks: 0,
-        CatOne: false,
-        CatTwo: false,
-        CatThree: false,
-        CatFour: false,
-        CatFive: false,
-        CatSix: false,
-        CatSeven: false,
-        catEight: false
-        };
-    }
 
-    IncrementLikes = () => {
+    /*IncrementLikes = () => {
         const LikeButton = document.querySelector(".NumberOfLikes");
         this.setState({ clicks: this.setState.clicks + 1})
     }*/
 
+    constructor(props) {
+        super(props);
+        }
 
     render() {
         return (
@@ -47,7 +36,7 @@ export class Cats extends Component {
                 <section className="Section Section__CatList" id="cats">
                     <div className="CatList__Container">
                         <h2>Get to know them!</h2>
-                        <Filter />
+                        {/*<Filter />*/}
                         <div className="Cats">
 
                             <div className="CatCard__Container">
@@ -90,6 +79,18 @@ export class Cats extends Component {
                                     <FontAwesomeIcon className="LikeIcon LikeIcon--1" icon={faHeart} onClick={() => {
                                         const LikeIcon = document.querySelector(".LikeIcon--1");
                                         LikeIcon.classList.toggle("clicked");
+
+                                        if (this.props.CatOne == "unliked") {
+                                            this.setState({catOne: "liked"});
+                                            console.log(this.props.catOne);
+                                            this.setState({likes: + this.props.likes + 1});
+                                            console.log(this.state.likes);
+                                        } else if (this.props.catOne == "liked") {
+                                            this.setState({catOne: "unliked"});
+                                            this.setState({likes: +this.props.likes - 1});
+                                            console.log(this.props.likes);
+                                        }
+
                                     }} />
                                 </div>
                             </div>

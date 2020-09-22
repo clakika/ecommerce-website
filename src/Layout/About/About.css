@@ -99,3 +99,9 @@
     }
 
   }
+
+  @media only screen and (max-width: 650px) {
+    .About__Text p { 
+      font-size: 0.8em;
+    }
+}

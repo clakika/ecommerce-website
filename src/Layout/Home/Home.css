@@ -73,5 +73,16 @@
   
   /* HOME SECTION END */ 
 
+  @media only screen and (max-width: 650px) {
+    .Header h1 {
+        font-size: 3.8em;
+    }
+
+    .Header h2 {
+      font-size: 0.9em;
+    }
+    
+  }
+
 
   

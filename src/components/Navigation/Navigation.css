@@ -89,7 +89,7 @@ nav ul:last-child {
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translate(-0.9rem, -0.3rem);
+  transform: translate(-0.9rem, -0.6rem);
 }
 .SearchContainer .SearchBar {
   position: relative;
@@ -126,6 +126,10 @@ nav ul:last-child {
   pointer-events: none;
 }
 
+.Navigation__MenuIcons {
+  margin-top: 1rem;
+}
+
 
 .SearchContainer .SearchBar .SearchIcon path {
   fill: rgb(173, 139, 133);
@@ -153,46 +157,6 @@ nav ul:last-child {
   border-radius: 40px;
   transform: translate(0.5rem, -0.7rem);
 }
-
-/*.SearchBar.clicked {
-  width: 20rem;
-  height: 2.1rem;
-  background-color: #f0ece3;
-  border-radius: 25px;
-  transition: all .3s ease-out;
-  position: relative;
-  transform: translate(-1rem, -0.5rem);
-}
-
-.SearchBar input.clicked {
-  width: 15rem;
-  transform: translate(3.5rem, 0.4rem);
-  border-bottom: 1px solid rgb(173, 139, 133);
-  border-top: 1px solid #f0ece3;
-  border-left: 1px solid #f0ece3;
-  border-right: 1px solid #f0ece3;
-  background-color: #f0ece3;
-  transition: all .3s ease-out;
-  display: block;
-}
-
-.SearchBar input:focus {
-  outline: none;
-}
-
-.SearchInput {
-  display: none;
-}
-
-.SearchIcon {
-  transition: all .3s ease-out;
-}
-
-.SearchIcon.clicked {
-  position: absolute;
-  transform: translate(0.5rem, 0.5rem);
-  color: rgb(165, 131, 125)
-}*/
 
 .scrolling-active {
   background-color: white;
@@ -226,6 +190,10 @@ nav ul:last-child {
   color: rgb(173, 139, 133);
 }
 
+.scrolling-active .Navigation__MenuIcons {
+  margin-top: 0.8rem;
+}
+
 /*Apply styles after scrolling start*/
 @media screen and (max-width: 750px) {
     .scrolling-active {
@@ -234,7 +202,7 @@ nav ul:last-child {
     }
 
     .scrolling-active .nav a {
-        color: #313131;
+        color: #f0ece3;
     }
 
     .scrolling-active nav {
@@ -251,9 +219,21 @@ nav ul:last-child {
         font-size: 2em;
     }
 
+    .scrolling-active .Navigation__Link::after {
+      color: white;
+    }
+    
+    .scrolling-active .Navigation__Link {
+      color: rgb(255, 255, 255);
+      font-size: 0.85em;
+  }
 
     .scrolling-active .Navigation__MenuItem {
         font-size: 1.5em;
+    }
+
+    .scrolling-active .Navigation__MenuList {
+        color:#f0ece3;
     }
 
     .scrolling-active .Navigation__Link {
@@ -342,6 +322,9 @@ nav ul:last-child {
     opacity: 0;
     font-size: 1.5em;
     font-family: 'Lobster Two', cursive;
+    color: white;
+    opacity: 1;
+    transition: all .2s ease;
   }
 
   .Navigation__MenuList li:hover {
@@ -349,7 +332,38 @@ nav ul:last-child {
   }
 
   .Navigation__MenuList li.fade {
-    opacity: 1;
+    opacity: 0;
   }
     
+}
+
+@media only screen and (max-width: 650px) {
+  .Navigation__CompanyName {
+    font-size: 2.2em;
+ 
+    margin-right: 3rem;
+  }
+
+  .Navigation__MenuIcons {
+    font-size: 0.9em;
+    margin-right: 40px;
+  }
+
+  .Navigation__MenuItem {
+    margin-top: 3px;
+  }
+
+  .SearchContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-0.9rem, -0.6rem);
+  }
+  .SearchContainer .SearchBar {
+    display: none;
+  }
+
+  .Navigation__MenuList {
+    font-size: 1.5em;
+  }
 }

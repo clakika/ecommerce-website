@@ -12,14 +12,31 @@ import Reviews from '../src/Layout/Reviews/Reviews';
 import Footer from '../src/Layout/Footer/Footer';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+        likes: 0,
+        CatOne: "unliked",
+        CatTwo: "unliked",
+        CatThree: "unliked",
+        CatFour: "unliked",
+        CatFive: "unliked",
+        CatSix: "unliked",
+        CatSeven: "unliked",
+        catEight: "unliked"
+        };
+    }
+
   render() {
     return (
       <div>
         <Router>
+        
         <Navigation/>
         <Home className="Section"/>
         <About className="Section"/>
         <Steps className="Section"/>
+        
         <Cats className="Section"/>
         <Reviews className="Section"/>
         <Footer className="Section"/>

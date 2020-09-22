@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
+import React, {useContext, Component } from 'react';
 import './Navigation.css';
+
 
 import { Link } from 'react-scroll';
 import { BrowserRouter as Router } from 'react-router-dom';
@@ -10,6 +11,7 @@ import { faPaw, faSearch, faMapMarkerAlt, faHeart } from '@fortawesome/free-soli
 
 
 export class Navigation extends Component {
+
     render() {
 
         window.addEventListener('scroll', (event) => {
@@ -27,7 +29,7 @@ export class Navigation extends Component {
                     <div className="MobileNav" onClick={() => {
                         const MobileNav = document.querySelector('.MobileNav');
                         const NavMenuList = document.querySelector('.Navigation__MenuList');
-                        const NavLink = document.querySelectorAll(".Navigation__MenuList li");
+                        const NavLink = document.querySelectorAll(".Navigation__Link");
 
                         MobileNav.classList.toggle("open");
 
@@ -103,7 +105,7 @@ export class Navigation extends Component {
                         </li>
                         <li>
                             <a href="#"><FontAwesomeIcon className="Navigation__MenuItem" icon={faHeart} /></a>
-                            <div className="NumberOfLikes">0</div>
+                <div className="NumberOfLikes">0</div>
                         </li>
                         <li>
                             <a href="#"><FontAwesomeIcon className="Navigation__MenuItem" icon={faMapMarkerAlt} /></a>
