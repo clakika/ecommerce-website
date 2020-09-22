@@ -105,3 +105,23 @@
       font-size: 0.8em;
     }
 }
+
+@media only screen and (max-width: 430px) {
+  .About__Text {
+    margin: 0 auto;
+  }
+
+  .About {
+    grid-template-columns: 24rem;
+    grid-column-gap: 0;
+    height: auto;
+    width: auto;
+    margin-left: 0;
+    padding: 0.8rem;
+    margin-bottom: 2rem;
+  }
+
+  .About__Container {
+    margin: 0;
+  }
+}

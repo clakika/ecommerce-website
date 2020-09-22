@@ -147,4 +147,37 @@
     }
 }
 
+@media only screen and (max-width: 430px) {
+    .Footer__Container {
+        width: 120vw;
+        max-height: 50rem;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        justify-content: center;
+        text-align: left;
+    }
+
+    .Section__Footer {
+        height: 98vh;
+        position: relative;
+        overflow: hidden;
+        background-color: rgb(245, 247, 243);
+        font-family: 'Raleway', sans-serif;
+      }
+
+      .Newsletter__Container {
+            margin-top: 2.5rem;
+    }
+
+    .Footer__Company {
+        margin-bottom: 2rem;
+    }
+    
+    .Category h5 {
+        margin-top: 1rem;
+        margin-bottom: 5px;
+    }
+  }
+
 
