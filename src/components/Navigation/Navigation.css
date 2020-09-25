@@ -1,22 +1,22 @@
 nav .Navigation__Container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 nav {
-    max-height: 6rem;
-    width: 100%;
-    position: fixed;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 2;
-    padding: 1.3rem;
-    transition: all .5s ease;
+  max-height: 6rem;
+  width: 100%;
+  position: fixed;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 2;
+  padding: 1.3rem;
+  transition: all .5s ease;
 }
 
 nav ul:last-child {
-    margin-left: auto;
+  margin-left: auto;
 }
 
 .Navigation__CompanyName {
@@ -49,25 +49,24 @@ nav ul:last-child {
 }
 
 .Navigation__Link::after {
-    content: "";
-    width: 0%;
-    height: 3px;
-    background-color: rgb(173, 139, 133);
-    position: absolute;
-    bottom: 0%;
-    left: 50%;
-    top: 100%;
-    border-radius: 20%;
-    transition: all .4s ease;
+  content: "";
+  width: 0%;
+  height: 3px;
+  background-color: rgb(173, 139, 133);
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  top: 100%;
+  border-radius: 20%;
+  transition: all .4s ease;
 }
 
 .Navigation__Link:hover::after {
-    content: "";
-    width: 100%;
-    position: absolute;
-    left: 0%;
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: 0%;
 }
-
 
 .Navigation__Container ul {
   list-style-type: none;
@@ -91,6 +90,7 @@ nav ul:last-child {
   align-items: center;
   transform: translate(-0.9rem, -0.6rem);
 }
+
 .SearchContainer .SearchBar {
   position: relative;
   display: block;
@@ -107,7 +107,7 @@ nav ul:last-child {
   border: none;
   outline: none;
   border-radius: 50px;
-  background-color:#f0ece3;
+  background-color: #f0ece3;
   padding: 8px;
   color: rgb(173, 139, 133);
   font-size: 15px;
@@ -130,19 +130,21 @@ nav ul:last-child {
   margin-top: 1rem;
 }
 
-
 .SearchContainer .SearchBar .SearchIcon path {
   fill: rgb(173, 139, 133);
   transition: 0.4s linear;
   position: absolute;
 }
+
 .SearchContainer .SearchBar:focus-within {
   max-width: 300px;
 }
+
 .SearchContainer .SearchBar:focus-within .SearchInput {
-  background-color:  #f0ece3;
+  background-color: #f0ece3;
   padding-right: 50px;
 }
+
 .SearchContainer .SearchBar:focus-within .SearchIcon path {
   fill: rgb(165, 131, 125);
 }
@@ -160,7 +162,7 @@ nav ul:last-child {
 
 .scrolling-active {
   background-color: white;
-  box-shadow: 0 3px 1rem rgba(0,0,0,.1);
+  box-shadow: 0 3px 1rem rgba(0, 0, 0, .1);
 }
 
 .scrolling-active .nav a {
@@ -195,52 +197,42 @@ nav ul:last-child {
 }
 
 /*Apply styles after scrolling start*/
+
 @media screen and (max-width: 750px) {
-    .scrolling-active {
-        background-color: white;
-        box-shadow: 0 3px 1rem rgba(0,0,0,.1);
-    }
-
-    .scrolling-active .nav a {
-        color: #f0ece3;
-    }
-
-    .scrolling-active nav {
-        height: 3rem;
-    }
-
-    .scrolling-active .Line {
-      background-color: rgb(173, 139, 133);
-
-    }
-
-    .scrolling-active .Navigation__CompanyName {
-        color: rgb(173, 139, 133);
-        font-size: 2em;
-    }
-
-    .scrolling-active .Navigation__Link::after {
-      color: white;
-    }
-    
-    .scrolling-active .Navigation__Link {
-      color: rgb(255, 255, 255);
-      font-size: 0.85em;
+  .scrolling-active {
+    background-color: white;
+    box-shadow: 0 3px 1rem rgba(0, 0, 0, .1);
   }
-
-    .scrolling-active .Navigation__MenuItem {
-        font-size: 1.5em;
-    }
-
-    .scrolling-active .Navigation__MenuList {
-        color:#f0ece3;
-    }
-
-    .scrolling-active .Navigation__Link {
-      color: #f0ece3;
-      font-size: 1em;
-    }
-
+  .scrolling-active .nav a {
+    color: #f0ece3;
+  }
+  .scrolling-active nav {
+    height: 3rem;
+  }
+  .scrolling-active .Line {
+    background-color: rgb(173, 139, 133);
+  }
+  .scrolling-active .Navigation__CompanyName {
+    color: rgb(173, 139, 133);
+    font-size: 2em;
+  }
+  .scrolling-active .Navigation__Link::after {
+    color: white;
+  }
+  .scrolling-active .Navigation__Link {
+    color: rgb(255, 255, 255);
+    font-size: 0.85em;
+  }
+  .scrolling-active .Navigation__MenuItem {
+    font-size: 1.5em;
+  }
+  .scrolling-active .Navigation__MenuList {
+    color: #f0ece3;
+  }
+  .scrolling-active .Navigation__Link {
+    color: #f0ece3;
+    font-size: 1em;
+  }
 }
 
 /*Apply styles after scrolling end*/
@@ -268,17 +260,14 @@ nav ul:last-child {
     -webkit-clip-path: circle(100px at 100% -15%);
     pointer-events: none;
   }
-
   .Navigation__MenuList.open {
     clip-path: circle(1100px at 100% -15%);
     -webkit-clip-path: circle(1100px at 100% -15%);
     pointer-events: all;
   }
-
   .Navigation__MenuItem {
     font-size: 1.5em;
   }
-
   .Line {
     width: 1.5rem;
     height: 3px;
@@ -287,37 +276,29 @@ nav ul:last-child {
     border-radius: 3px;
     transition: all 0.2s ease-in-out;
   }
-
   .MobileNav {
     position: absolute;
     cursor: pointer;
     right: 5%;
-    z-index: 1000;
+    z-index: 10000000;
   }
-
-  
   .Navigation__MenuIcons {
     margin-right: 4rem;
     margin-top: 0.7rem;
   }
-
   .MobileNav.open .Line {
     background-color: #f0ece3;
   }
-
   .MobileNav.open .Line:nth-child(1) {
     transform: rotate(45deg) translate(6px, 5px);
   }
-
   .MobileNav.open .Line:nth-child(2) {
     transform: translateX(-2rem);
-    background:transparent;
+    background: transparent;
   }
-
   .MobileNav.open .Line:nth-child(3) {
     transform: rotate(-45deg) translate(6px, -5px);
   }
-
   .Navigation__MenuList li {
     opacity: 0;
     font-size: 1.5em;
@@ -326,33 +307,26 @@ nav ul:last-child {
     opacity: 1;
     transition: all .2s ease;
   }
-
   .Navigation__MenuList li:hover {
     font-style: italic;
   }
-
-  .Navigation__MenuList li.fade {
+  .NavigationList li.fade {
     opacity: 0;
   }
-    
 }
 
 @media only screen and (max-width: 650px) {
   .Navigation__CompanyName {
     font-size: 2.2em;
- 
     margin-right: 3rem;
   }
-
   .Navigation__MenuIcons {
     font-size: 0.9em;
     margin-right: 40px;
   }
-
   .Navigation__MenuItem {
     margin-top: 3px;
   }
-
   .SearchContainer {
     display: flex;
     justify-content: center;
@@ -362,7 +336,6 @@ nav ul:last-child {
   .SearchContainer .SearchBar {
     display: none;
   }
-
   .Navigation__MenuList {
     font-size: 1.5em;
   }

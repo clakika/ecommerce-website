@@ -1,4 +1,4 @@
-import React, {useContext, Component } from 'react';
+import React, { useContext, Component } from 'react';
 import './Navigation.css';
 
 
@@ -51,7 +51,15 @@ export class Navigation extends Component {
                                 smooth={true}
                                 offset={0}
                                 duration={300}>
-                                <li>
+                                <li
+                                    onClick={() => {
+                                        const MobileNav = document.querySelector('.MobileNav');
+                                        const NavMenuList = document.querySelector('.Navigation__MenuList');
+
+                                        MobileNav.classList.toggle("open");
+                                        NavMenuList.classList.toggle("open");
+
+                                    }}>
                                     <a href="#" className="Navigation__Link">home</a>
                                 </li>
                             </Link>
@@ -63,7 +71,15 @@ export class Navigation extends Component {
                                 smooth={true}
                                 offset={0}
                                 duration={300}>
-                                <li>
+                                <li 
+                                    onClick={() => {
+                                    const MobileNav = document.querySelector('.MobileNav');
+                                    const NavMenuList = document.querySelector('.Navigation__MenuList');
+
+                                    MobileNav.classList.toggle("open");
+                                    NavMenuList.classList.toggle("open");
+
+                                }}>
                                     <a href="#" className="Navigation__Link">about</a>
                                 </li>
                             </Link>
@@ -75,7 +91,15 @@ export class Navigation extends Component {
                                 smooth={true}
                                 offset={0}
                                 duration={300}>
-                                <li>
+                                <li 
+                                    onClick={() => {
+                                    const MobileNav = document.querySelector('.MobileNav');
+                                    const NavMenuList = document.querySelector('.Navigation__MenuList');
+
+                                    MobileNav.classList.toggle("open");
+                                    NavMenuList.classList.toggle("open");
+
+                                }}>
                                     <a href="#" className="Navigation__Link">cats</a>
                                 </li>
                             </Link>
@@ -87,7 +111,15 @@ export class Navigation extends Component {
                                 smooth={true}
                                 offset={0}
                                 duration={300}>
-                                <li>
+                                <li 
+                                    onClick={() => {
+                                    const MobileNav = document.querySelector('.MobileNav');
+                                    const NavMenuList = document.querySelector('.Navigation__MenuList');
+
+                                    MobileNav.classList.toggle("open");
+                                    NavMenuList.classList.toggle("open");
+
+                                }}>
                                     <a href="#" className="Navigation__Link">contacts</a>
                                 </li>
                             </Link>
@@ -105,7 +137,7 @@ export class Navigation extends Component {
                         </li>
                         <li>
                             <a href="#"><FontAwesomeIcon className="Navigation__MenuItem" icon={faHeart} /></a>
-                <div className="NumberOfLikes">0</div>
+                            <div className="NumberOfLikes">0</div>
                         </li>
                         <li>
                             <a href="#"><FontAwesomeIcon className="Navigation__MenuItem" icon={faMapMarkerAlt} /></a>
