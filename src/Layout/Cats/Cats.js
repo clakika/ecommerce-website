@@ -19,18 +19,8 @@ import { faCat, faPaw, faSmileBeam, faFilter, faBaseballBall, faArrowAltCircleLe
 import { faHeart } from '@fortawesome/free-regular-svg-icons';
 
 
-export class Cats extends Component {
-
-    /*IncrementLikes = () => {
-        const LikeButton = document.querySelector(".NumberOfLikes");
-        this.setState({ clicks: this.setState.clicks + 1})
-    }*/
-
-    constructor(props) {
-        super(props);
-        }
-
-    render() {
+function Cats({ incrementHandler }) {
+    
         return (
             <Router>
                 <section className="Section Section__CatList" id="cats">
@@ -79,19 +69,8 @@ export class Cats extends Component {
                                     <FontAwesomeIcon className="LikeIcon LikeIcon--1" icon={faHeart} onClick={() => {
                                         const LikeIcon = document.querySelector(".LikeIcon--1");
                                         LikeIcon.classList.toggle("clicked");
-
-                                        if (this.props.CatOne == "unliked") {
-                                            this.setState({catOne: "liked"});
-                                            console.log(this.props.catOne);
-                                            this.setState({likes: + this.props.likes + 1});
-                                            console.log(this.state.likes);
-                                        } else if (this.props.catOne == "liked") {
-                                            this.setState({catOne: "unliked"});
-                                            this.setState({likes: +this.props.likes - 1});
-                                            console.log(this.props.likes);
-                                        }
-
-                                    }} />
+                                        incrementHandler(0);
+                                        }} />
                                 </div>
                             </div>
 
@@ -138,8 +117,8 @@ export class Cats extends Component {
                                     }} />
                                     <FontAwesomeIcon className="LikeIcon LikeIcon--2" icon={faHeart} onClick={() => {
                                         const LikeIcon = document.querySelector(".LikeIcon--2");
-
                                         LikeIcon.classList.toggle("clicked");
+                                        incrementHandler(1);
                                     }} />
                                 </div>
                             </div>
@@ -183,8 +162,8 @@ export class Cats extends Component {
                                     }} />
                                     <FontAwesomeIcon className="LikeIcon LikeIcon--3" icon={faHeart} onClick={() => {
                                         const LikeIcon = document.querySelector(".LikeIcon--3");
-
                                         LikeIcon.classList.toggle("clicked");
+                                        incrementHandler(2);
                                     }} />
                                 </div>
                             </div>
@@ -228,8 +207,8 @@ export class Cats extends Component {
                                     }} />
                                     <FontAwesomeIcon className="LikeIcon LikeIcon--4" icon={faHeart} onClick={() => {
                                         const LikeIcon = document.querySelector(".LikeIcon--4");
-
                                         LikeIcon.classList.toggle("clicked");
+                                        incrementHandler(3);
                                     }} />
                                 </div>
                             </div>
@@ -274,8 +253,8 @@ export class Cats extends Component {
                                     }} />
                                     <FontAwesomeIcon className="LikeIcon LikeIcon--5" icon={faHeart} onClick={() => {
                                         const LikeIcon = document.querySelector(".LikeIcon--5");
-
                                         LikeIcon.classList.toggle("clicked");
+                                        incrementHandler(4);
                                     }} />
                                 </div>
                             </div>
@@ -319,8 +298,8 @@ export class Cats extends Component {
                                     }} />
                                     <FontAwesomeIcon className="LikeIcon LikeIcon--6" icon={faHeart} onClick={() => {
                                         const LikeIcon = document.querySelector(".LikeIcon--6");
-
                                         LikeIcon.classList.toggle("clicked");
+                                        incrementHandler(5);
                                     }} />
                                 </div>
                             </div>
@@ -368,8 +347,8 @@ export class Cats extends Component {
                                     }} />
                                     <FontAwesomeIcon className="LikeIcon LikeIcon--7" icon={faHeart} onClick={() => {
                                         const LikeIcon = document.querySelector(".LikeIcon--7");
-
                                         LikeIcon.classList.toggle("clicked");
+                                        incrementHandler(6);
                                     }} />
                                 </div>
                             </div>
@@ -413,8 +392,8 @@ export class Cats extends Component {
                                     }} />
                                     <FontAwesomeIcon className="LikeIcon LikeIcon--8" icon={faHeart} onClick={() => {
                                         const LikeIcon = document.querySelector(".LikeIcon--8");
-
                                         LikeIcon.classList.toggle("clicked");
+                                        incrementHandler(7);
                                     }} />
                                 </div>
                             </div>
@@ -426,6 +405,5 @@ export class Cats extends Component {
             </Router>
         )
     }
-}
 
 export default Cats;
